@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Registration</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #89f7fe, #66a6ff);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 420px;
+            background-color: white;
+            margin: 80px auto;
+            padding: 25px 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 25px;
+            letter-spacing: 1px;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        td {
+            padding: 8px 5px;
+            vertical-align: top;
+            color: #333;
+        }
+
+        input[type="text"], textarea {
+            width: 90%;
+            padding: 7px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            outline: none;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        input[type="text"]:focus, textarea:focus {
+            border-color: #66a6ff;
+            box-shadow: 0 0 4px #66a6ff;
+        }
+
+        input[type="radio"], input[type="checkbox"] {
+            accent-color: #66a6ff;
+            cursor: pointer;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        .button-group {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        input[type="submit"], input[type="reset"] {
+            width: 120px;
+            padding: 10px;
+            margin: 5px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        input[type="submit"] {
+            background-color: #66a6ff;
+            color: white;
+        }
+
+        input[type="reset"] {
+            background-color: #ccc;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #4e8ef7;
+        }
+
+        input[type="reset"]:hover {
+            background-color: #999;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Pendaftaran </h2>
+        <form>
+            <table>
+                <tr>
+                    <td>Nama</td>
+                    <td><input type="text" name="nama" placeholder="Masukkan nama lengkap"></td>
+                </tr>
+                <tr>
+                    <td>Tgl Lahir</td>
+                    <td>
+                        <input type="text" name="tgl" size="2" maxlength="2" placeholder="DD"> /
+                        <input type="text" name="bln" size="2" maxlength="2" placeholder="MM"> /
+                        <input type="text" name="thn" size="4" maxlength="4" placeholder="YYYY">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Alamat</td>
+                    <td><textarea name="alamat" rows="3" placeholder="Masukkan alamat lengkap"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Kota</td>
+                    <td><input type="text" name="kota" placeholder="Kota tempat tinggal"></td>
+                </tr>
+                <tr>
+                    <td>Pekerjaan</td>
+                    <td><input type="text" name="pekerjaan" placeholder="Masukkan pekerjaan"></td>
+                </tr>
+                <tr>
+                    <td>Jenis Kelamin</td>
+                    <td>
+                        <input type="radio" name="jk" value="Laki-laki"> Laki-Laki<br>
+                        <input type="radio" name="jk" value="Perempuan"> Perempuan
+                    </td>
+                </tr>
+                <tr>
+                    <td>Include</td>
+                    <td>
+                        <input type="checkbox" name="hobby" value="Reading"> <br>
+                        <input type="checkbox" name="hobby" value="Sport"> <br>
+                        <input type="checkbox" name="hobby" value="Fishing"> <br>
+                        <input type="checkbox" name="hobby" value="mancing"> 
+                    </td>
+                </tr>
+            </table>
+
+            <div class="button-group">
+                <input type="submit" value="Kirim">
+                <input type="reset" value="Batal">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
